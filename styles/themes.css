@@ -1,0 +1,75 @@
+:root.theme-light {
+  --font-w-normal: 465;
+  --font-w-bold: 785;
+  --bg-color: #ffffff;
+  --accent-color: #000000;
+  --btn-text-color: #ffffff;
+  --animation-contour-color: #000000;
+  --bg-img: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #e7e7e7,
+      #1a1a1a 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg, 
+      #e7e7e7 
+      0.01%, 
+      #1a1a1a);
+}
+
+:root.theme-dark {
+  --font-w-normal: 465;
+  --font-w-bold: 785;
+  --bg-color: #000000;
+  --accent-color: #00cc14;
+  --btn-text-color: #00cc14;
+  --animation-contour-color: #00cc14;
+  --bg-img: repeating-linear-gradient(
+      90deg,
+      #000000,
+      #000000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #007f0c,
+      #004306 2px,
+      transparent 2px,
+      transparent 4px
+    );
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-w-normal: 465;
+    --font-w-bold: 785;
+    --bg-color: #000000;
+    --accent-color: #00cc14;
+    --btn-text-color: #00cc14;
+    --animation-contour-color: #00cc14;
+    --bg-img: repeating-linear-gradient(
+        90deg,
+        #000000,
+        #000000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #007f0c,
+        #004306 2px,
+        transparent 2px,
+        transparent 4px
+      );
+  }
+}
