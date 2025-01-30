@@ -302,21 +302,27 @@
 .filter__one {
   filter: saturate(20%) brightness(1.2);
 }
+
 .filter__two {
   filter: saturate(350%);
 }
+
 .filter__three {
   filter: hue-rotate(30deg);
 }
+
 .filter__four {
   filter: invert(80%);
 }
+
 .filter__five {
   filter: sepia(90%) grayscale(10%);
 }
+
 .filter__six {
   filter: blur(10px);
 }
+
 .filter__seven {
   filter: saturate(250%) hue-rotate(110deg) blur(0.2rem) brightness(80%) contrast(50%);
 }
