@@ -1,6 +1,6 @@
 :root.theme-light {
-  --font-w-normal: 465;
-  --font-w-bold: 785;
+  --font-w-normal: 400;
+  --font-w-bold: 700;
   --bg-color: #ffffff;
   --accent-color: #000000;
   --btn-text-color: #ffffff;
@@ -27,8 +27,8 @@
 }
 
 :root.theme-dark {
-  --font-w-normal: 465;
-  --font-w-bold: 785;
+  --font-w-normal: 400;
+  --font-w-bold: 700;
   --bg-color: #000000;
   --accent-color: #00cc14;
   --btn-text-color: #00cc14;

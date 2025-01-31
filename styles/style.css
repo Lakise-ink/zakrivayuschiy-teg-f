@@ -46,13 +46,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 102px auto 104px auto;
+  /* margin: 102px auto 104px auto; */
   border: 2px solid var(--accent-color, #000000);
   font-family: var(--font-accent, sans-serif);
   text-align: center;
   background-color: var(--bg-color, #ffffff);
-  max-inline-size: 700px;
-  min-block-size: 364px;
+  /* max-inline-size: 700px;
+  min-block-size: 364px; */
+  min-height: 368px;
+  margin: 0 368px 0 368px;
+  margin-block: 100px;
+  
 }
 
 .header__logo {
@@ -187,7 +191,7 @@
   line-height: normal;
   text-shadow: -1px 0 var(--accent-color, #000000),
     0 1px var(--accent-color, #000000), 1px 0 var(--accent-color, #000000),
-    0 -1px var(--accent-color, #000000);
+    0 -1px var(--bg-color, #ffffff);
   inset-block-start: 25px;
   inset-inline-end: 25px;
   mix-blend-mode: hard-light;
@@ -248,7 +252,7 @@
   border: 2px solid var(--accent-color, #000000);
   padding: 9px 17px;
   color: var(--accent-color, #000000);
-  font-family: var(--font-accent);
+  font-family: var(--font-accent, fantasy);
   background: var(--bg-color, #ffffff);
   cursor: pointer;
 }
@@ -299,31 +303,31 @@
 
 /*--------------FILTERS--------------*/
 
-.filter__one {
+.filter__brightness {
   filter: saturate(20%) brightness(1.2);
 }
 
-.filter__two {
+.filter__saturate {
   filter: saturate(350%);
 }
 
-.filter__three {
+.filter__hue-rotate {
   filter: hue-rotate(30deg);
 }
 
-.filter__four {
+.filter__invert {
   filter: invert(80%);
 }
 
-.filter__five {
+.filter__sepia {
   filter: sepia(90%) grayscale(10%);
 }
 
-.filter__six {
+.filter__blur {
   filter: blur(10px);
 }
 
-.filter__seven {
+.multi__filter {
   filter: saturate(250%) hue-rotate(110deg) blur(0.2rem) brightness(80%) contrast(50%);
 }
 
@@ -360,7 +364,6 @@
   width: clamp(341px, 50%, 357px);
   border: 2px solid var(--accent-color, #000000);
   padding: 31.5px 32.5px 30.5px 26px;
-  overflow: hidden;
   color: var(--accent-color, #000000);
   font-family: var(--font-accent, monospace);
   font-size: 14px;
@@ -419,7 +422,7 @@ dialog[open] {
 
   .header {
     margin: 100px auto 100px auto;
-    min-block-size: 326px;
+    min-height: 326px;
   }
 
   .header__logo {
