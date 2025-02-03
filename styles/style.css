@@ -205,17 +205,17 @@
     0 -1px var(--accent-color);
   inset-inline-end: clamp(11px, -0.3221rem + 4.3077vw, 25px);
   inset-block-start: clamp(23px, 1.2933rem + 0.6154vw, 25px);
-  mix-blend-mode: light;
+  mix-blend-mode: hard-light;
 }
 
 @supports (
-  (text-stroke: 1px var(--accent-color)) or
-  (-webkit-text-stroke: 1px var(--accent-color))
+  (text-stroke: 1px var(--btn-text-color)) or
+  (-webkit-text-stroke: 1px var(--btn-text-color))
 ) {
   .card__poster-label {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--accent-color);
-    text-stroke: 1px var(--accent-color);
+    -webkit-text-stroke: 1px var(--btn-text-color);
+    text-stroke: 1px var(--btn-text-color);
   }
 }
 
