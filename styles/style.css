@@ -212,12 +212,14 @@
 
 @supports (
   (text-stroke: 1px var(--bg-color, #ffffff)) or
-    (-webkit-text-stroke: 1px var(--bg-color, #ffffff))
-) {
+  (-webkit-text-stroke: 1px var(--bg-color, #ffffff))
+) 
+
+{
   .card__poster-label {
     text-shadow: none;
-    text-stroke: 1px var(--bg-color, #ffffff);
     -webkit-text-stroke: 1px var(--bg-color, #ffffff);
+    text-stroke: 1px var(--bg-color, #ffffff);
   }
 }
 
@@ -244,7 +246,7 @@
 
 .card__icon-button {
   position: relative;
-  border: none;
+  border: 2px solid transparent;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -368,7 +370,7 @@
   position: relative;
   z-index: 1;
   flex-shrink: 0;
-  fill: var(--btn-text-color, #ffffff);
+  color: var(--btn-text-color, #ffffff);
   inline-size: 21px;
   block-size: 21px;
   mix-blend-mode: difference;
