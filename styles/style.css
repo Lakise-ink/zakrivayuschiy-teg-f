@@ -195,29 +195,27 @@
   position: absolute;
   z-index: 1;
   opacity: 0.5;
-  color: var(--accent-color, #000000);
+  color: var(--accent-color);
   font-family: var(--font-accent), monospace;
   font-size: 14px;
   text-shadow: 
-    -1px 0 var(--accent-color, #000000),
-    1px 0 var(--accent-color, #000000), 
-    0 1px var(--accent-color, #000000),
-    0 -1px var(--accent-color, #000000);
+    -1px 0 var(--accent-color),
+    1px 0 var(--accent-color), 
+    0 1px var(--accent-color),
+    0 -1px var(--accent-color);
   inset-inline-end: clamp(11px, -0.3221rem + 4.3077vw, 25px);
   inset-block-start: clamp(23px, 1.2933rem + 0.6154vw, 25px);
-  /* mix-blend-mode: light; */
+  mix-blend-mode: light;
 }
 
 @supports (
-  (text-stroke: 1px var(--bg-color, #ffffff)) or
-  (-webkit-text-stroke: 1px var(--bg-color, #ffffff))
-) 
-
-{
+  (text-stroke: 1px var(--accent-color)) or
+  (-webkit-text-stroke: 1px var(--accent-color))
+) {
   .card__poster-label {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--bg-color, #ffffff);
-    text-stroke: 1px var(--bg-color, #ffffff);
+    -webkit-text-stroke: 1px var(--accent-color);
+    text-stroke: 1px var(--accent-color);
   }
 }
 
