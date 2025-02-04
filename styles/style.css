@@ -60,13 +60,19 @@
 
 .header__logo {
   margin-block-end: 18px;
-  font-size: var(--main-title-font-size, clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem));
+  font-size: var(
+    --main-title-font-size,
+    clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem)
+  );
   text-align: center;
 }
 
 .header__title {
   margin-block-end: 24px;
-  font-size: var(--title-font-size, clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem));
+  font-size: var(
+    --title-font-size,
+    clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem)
+  );
   text-align: center;
 }
 
@@ -189,11 +195,8 @@
   font-family: var(--font-accent), monospace;
   font-size: 14px;
   line-height: normal;
-  text-shadow: 
-  -1px 0 var(--text-shadow-color), 
-  1px 0 var(--text-shadow-color),  
-  0 1px var(--text-shadow-color), 
-  0 -1px var(--text-shadow-color); 
+  text-shadow: -1px 0 var(--text-shadow-color), 1px 0 var(--text-shadow-color),
+    0 1px var(--text-shadow-color), 0 -1px var(--text-shadow-color);
   /* inset-inline-end: clamp(11px, -0.3221rem + 4.3077vw, 25px);
   inset-block-start: clamp(23px, 1.2933rem + 0.6154vw, 25px); */
   inset-block-start: 25px;
@@ -201,14 +204,15 @@
   mix-blend-mode: hard-light;
 }
 
-@supports ( 
-  (text-stroke: 1px var(--text-shadow-color)) or 
-  (-webkit-text-stroke: 1px var(--text-shadow-color))) { 
-.card__poster-label {
-  text-shadow: none; 
-  -webkit-text-stroke: 1px var(--text-shadow-color); 
-  text-stroke: 1px var(--text-shadow-color);
-}
+@supports (
+  (text-stroke: 1px var(--text-shadow-color)) or
+    (-webkit-text-stroke: 1px var(--text-shadow-color))
+) {
+  .card__poster-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--text-shadow-color);
+    text-stroke: 1px var(--text-shadow-color);
+  }
 }
 
 .card__content {
@@ -332,7 +336,8 @@
 }
 
 .multi__filter {
-  filter: saturate(250%) hue-rotate(110deg) blur(0.2rem) brightness(80%) contrast(50%);
+  filter: saturate(250%) hue-rotate(110deg) blur(0.2rem) brightness(80%)
+    contrast(50%);
 }
 
 /*--------------BUTTON SAVE--------------*/
@@ -433,7 +438,6 @@ dialog[open] {
 /*--------------ADAPTIVE--------------*/
 
 @media (width <= 376px) {
-
   .header {
     margin: 103px auto 103px auto;
   }
@@ -473,7 +477,7 @@ dialog[open] {
   .dialog__text {
     max-inline-size: 198px;
   }
-  
+
   .dialog__close-button {
     inline-size: 257px;
   }
