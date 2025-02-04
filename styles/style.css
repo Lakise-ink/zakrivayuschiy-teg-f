@@ -203,14 +203,12 @@
 
 @supports ( 
   (text-stroke: 1px var(--text-shadow-color)) or 
-  (-webkit-text-stroke: 1px var(--text-shadow-color)) 
-) 
-{ 
-.card__poster-label { 
+  (-webkit-text-stroke: 1px var(--text-shadow-color))) { 
+.card__poster-label {
   text-shadow: none; 
   -webkit-text-stroke: 1px var(--text-shadow-color); 
-  text-stroke: 1px var(--text-shadow-color); 
-} 
+  text-stroke: 1px var(--text-shadow-color);
+}
 }
 
 .card__content {
