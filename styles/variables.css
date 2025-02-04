@@ -18,6 +18,8 @@
     --animation-contour-color: #000000;
     --animation-heart-fill-color: #ff0000;
 
+    --text-shadow-color: #ffffff;
+
     --bg-color: #ffffff;
     --bg-img: repeating-linear-gradient(
         90deg,

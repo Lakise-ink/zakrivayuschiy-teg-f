@@ -38,6 +38,16 @@
       transform: scale(1.15);
     }
   }
+
+  @keyframes arrow {
+    from {
+      inset-inline-start: -20px;
+    }
+
+    to {
+      inset-inline-start: -16px;
+    }
+  }
   
   .like-icon {
     transform-origin: center;

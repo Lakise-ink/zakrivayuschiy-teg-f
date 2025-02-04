@@ -38,6 +38,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--font-w-normal, 400);
+  margin: 0 auto;
 }
 
 /*--------------HEADER--------------*/
@@ -50,11 +51,10 @@
   font-family: var(--font-accent, sans-serif);
   text-align: center;
   background-color: var(--bg-color, #ffffff);
-  min-height: 368px;
   padding-block: clamp(7.5rem, 6.3462rem + 4.9231vw, 8.5rem) 24px;
   max-width: 700px;
   margin-block: 100px;
-  margin: 102px auto 100px auto;
+  margin: 103px auto 104px auto;
   text-transform: uppercase;
 }
 
@@ -137,16 +137,6 @@
   position: absolute;
   inset-inline-start: -20px;
   animation: arrow 0.5s ease-in-out infinite alternate;
-
-  @keyframes arrow {
-    from {
-      inset-inline-start: -20px;
-    }
-
-    to {
-      inset-inline-start: -16px;
-    }
-  }
 }
 
 /*--------------CONTENT--------------*/
@@ -198,25 +188,28 @@
   color: var(--accent-color);
   font-family: var(--font-accent), monospace;
   font-size: 14px;
+  line-height: normal;
   text-shadow: 
-    -1px 0 var(--accent-color),
-    1px 0 var(--accent-color), 
-    0 1px var(--accent-color),
-    0 -1px var(--accent-color);
-  inset-inline-end: clamp(11px, -0.3221rem + 4.3077vw, 25px);
-  inset-block-start: clamp(23px, 1.2933rem + 0.6154vw, 25px);
+  -1px 0 var(--text-shadow-color), 
+  1px 0 var(--text-shadow-color),  
+  0 1px var(--text-shadow-color), 
+  0 -1px var(--text-shadow-color); 
+  /* inset-inline-end: clamp(11px, -0.3221rem + 4.3077vw, 25px);
+  inset-block-start: clamp(23px, 1.2933rem + 0.6154vw, 25px); */
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
   mix-blend-mode: hard-light;
 }
 
-@supports (
-  (text-stroke: 1px var(--btn-text-color)) or
-  (-webkit-text-stroke: 1px var(--btn-text-color))
-) {
-  .card__poster-label {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--btn-text-color);
-    text-stroke: 1px var(--btn-text-color);
-  }
+@supports ( 
+  (text-stroke: 1px var(--text-shadow-color)) or 
+  (-webkit-text-stroke: 1px var(--text-shadow-color)) 
+) { 
+  .card__poster-label { 
+    text-shadow: none; 
+    -webkit-text-stroke: 1px var(--text-shadow-color); 
+    text-stroke: 1px var(--text-shadow-color); 
+  } 
 }
 
 .card__content {
@@ -230,6 +223,7 @@
   font-family: var(--font-main, sans-serif);
   font-weight: var(--font-w-normal, 400);
   font-size: var(--main-font-size, 18px);
+  line-height: 21px;
 }
 
 .card__buttons {
@@ -384,10 +378,20 @@
 }
 
 dialog[open] {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px; */
+  display: grid;
+  grid-template-rows: min-content min-content;
   gap: 30px;
+  border: 2px solid var(--accent-color, #000000);
+  padding-inline: 30px;
+  padding-block: 30px;
+  overflow: hidden;
+  background-color: var(--bg-color, #ffffff);
+  inline-size: 100%;
+  max-inline-size: 357px;
 }
 
 .dialog::backdrop {
@@ -432,8 +436,7 @@ dialog[open] {
 @media (width <= 376px) {
 
   .header {
-    margin: 100px auto 100px auto;
-    min-height: 326px;
+    margin: 103px auto 103px auto;
   }
 
   .content__post {

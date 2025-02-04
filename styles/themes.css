@@ -5,6 +5,7 @@
   --accent-color: #000000;
   --btn-text-color: #ffffff;
   --animation-contour-color: #000000;
+  --text-shadow-color: #ffffff;
   --bg-img: repeating-linear-gradient(
       90deg,
       #d3d3d3,
@@ -27,12 +28,13 @@
 }
 
 :root.theme-dark {
-  --font-w-normal: 400;
-  --font-w-bold: 700;
+  --font-w-normal: 465;
+  --font-w-bold: 785;
   --bg-color: #000000;
   --accent-color: #00cc14;
   --btn-text-color: #00cc14;
   --animation-contour-color: #00cc14;
+  --text-shadow-color: #000000;
   --bg-img: repeating-linear-gradient(
       90deg,
       #000000,
